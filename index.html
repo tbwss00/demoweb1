@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True B Welding</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="#inicio" class="logo-container">
+        <img src="img/Logo03.png" alt="True Blue Welding Services Solution Pty Logo" />
+      </a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#inicio"    class="nav-link"><span class="lang lang-es">Inicio</span><span class="lang lang-en">Home</span></a>
+        <a href="#servicios" class="nav-link"><span class="lang lang-es">Servicios</span><span class="lang lang-en">Services</span></a>
+        <a href="#proyectos" class="nav-link"><span class="lang lang-es">Proyectos</span><span class="lang lang-en">Projects</span></a>
+        <a href="#nosotros"  class="nav-link"><span class="lang lang-es">Nosotros</span><span class="lang lang-en">About Us</span></a>
+        <a href="#contacto"  class="nav-link"><span class="lang lang-es">Contacto</span><span class="lang lang-en">Contact</span></a>
+      </nav>
+
+      <div class="lang-switcher" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en" type="button" title="English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="26" height="16" aria-hidden="true">
+            <rect width="60" height="30" fill="#012169"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/>
+            <path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/>
+            <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/>
+          </svg>
+          <span>EN</span>
+        </button>
+        <button class="lang-btn" data-lang="es" type="button" title="Español">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="26" height="16" aria-hidden="true">
+            <rect width="3" height="2" fill="#AA151B"/>
+            <rect y="0.5" width="3" height="1" fill="#F1BF00"/>
+          </svg>
+          <span>ES</span>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO + SLIDESHOW ===== -->
+    <section id="inicio" class="hero">
+      <div class="slideshow" id="slideshow">
+        <div class="slide active" style="background-image: url('img/slide1.jpg')"></div>
+        <div class="slide"        style="background-image: url('img/slide2.jpg')"></div>
+        <div class="slide"        style="background-image: url('img/slide3.jpg')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-title-block">
+          <h1>True B Welding</h1>
+          <span class="hero-tagline">
+            <span class="lang lang-es">Soldadura profesional · Estructuras metálicas · Industria</span>
+            <span class="lang lang-en">Professional Welding · Steel Structures · Industry</span>
+          </span>
+        </div>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle">
+          <span class="lang lang-es">Servicios profesionales de soldadura para construcción, estructuras metálicas e industria, con soluciones seguras, precisas y adaptadas a cada proyecto.</span>
+          <span class="lang lang-en">Professional welding services for construction, steel structures and industrial projects — safe, precise and built to last.</span>
+        </p>
+        <p class="hero-text">
+          <span class="lang lang-es">Somos especialistas en soldadura industrial MIG, TIG y electrodo, trabajando con acero al carbono, inoxidable y otros metales para garantizar uniones resistentes y duraderas en obras civiles, mantenimiento y fabricación de estructuras a medida.</span>
+          <span class="lang lang-en">We specialize in industrial MIG, TIG and stick welding, working with carbon steel, stainless steel and other metals to ensure strong, durable joints for civil works, maintenance and custom metal fabrication.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">
+            <span class="lang lang-es">Ver proyectos</span>
+            <span class="lang lang-en">View Projects</span>
+          </a>
+          <a href="#contacto" class="btn btn-outline">
+            <span class="lang lang-es">Solicitar cotización</span>
+            <span class="lang lang-en">Request a Quote</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide-dots" id="slideDots">
+        <button class="slide-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="slide-dot"        data-index="1" aria-label="Slide 2"></button>
+        <button class="slide-dot"        data-index="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="slide-progress">
+        <div class="slide-progress-bar" id="slideProgressBar"></div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <p class="section-label">
+          <span class="label-dot"></span>
+          <span class="lang lang-es">NUESTROS SERVICIOS</span>
+          <span class="lang lang-en">OUR SERVICES</span>
+        </p>
+        <div class="services-layout">
+
+          <div class="services-image">
+            <img src="img//services.png" alt="Welding on site" />
+          </div>
+
+          <div class="services-content">
+            <h2 class="services-heading">
+              <span class="lang lang-es">Soluciones diversas adaptadas a cada proyecto</span>
+              <span class="lang lang-en">Diverse solutions tailored to your every need</span>
+            </h2>
+
+            <div class="accordion-item open">
+              <button class="accordion-trigger" aria-expanded="true">
+                <span class="lang lang-es">Soldadura industrial MIG / TIG</span>
+                <span class="lang lang-en">Industrial MIG / TIG Welding</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Ofrecemos soldadura MIG y TIG para estructuras metálicas, tuberías y equipos industriales. Trabajamos con acero al carbono, inoxidable y aluminio, garantizando cordones de alta resistencia bajo normas internacionales de calidad.</span>
+                <span class="lang lang-en">We provide MIG and TIG welding for metal structures, piping and industrial equipment. We work with carbon steel, stainless steel and aluminium, delivering high-strength welds under international quality standards.</span>
+              </p></div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="lang lang-es">Soldadura por electrodo revestido</span>
+                <span class="lang lang-en">Stick Welding (SMAW)</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Ideal para trabajos en campo, condiciones adversas y aceros de alta resistencia. Nuestros soldadores certificados ejecutan uniones con electrodo en estructuras civiles, mantenimiento industrial y reparaciones urgentes.</span>
+                <span class="lang lang-en">Ideal for field work, adverse conditions and high-strength steels. Our certified welders perform stick welding on civil structures, industrial maintenance and emergency repairs.</span>
+              </p></div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="lang lang-es">Fabricación de estructuras metálicas</span>
+                <span class="lang lang-en">Steel Structure Fabrication</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Diseño y fabricación de vigas, columnas, soportes, plataformas y cerramientos metálicos a medida. Entregamos estructuras listas para montaje con cortes, perforados y acabados de alta precisión.</span>
+                <span class="lang lang-en">Design and fabrication of beams, columns, supports, platforms and custom steel enclosures. We deliver mount-ready structures with precision cutting, drilling and finishing.</span>
+              </p></div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="lang lang-es">Montaje e instalación en obra</span>
+                <span class="lang lang-en">On-site Assembly &amp; Installation</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Coordinamos el montaje de estructuras metálicas directamente en obra, con equipo propio y protocolos de seguridad. Gestionamos desde la planificación hasta la entrega final del trabajo.</span>
+                <span class="lang lang-en">We coordinate the assembly of metal structures directly on site, with our own equipment and safety protocols. We manage everything from planning to final delivery.</span>
+              </p></div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="lang lang-es">Mantenimiento y reparación industrial</span>
+                <span class="lang lang-en">Industrial Maintenance &amp; Repair</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Servicio de mantenimiento preventivo y correctivo para equipos, maquinaria y líneas de producción. Reparamos fisuras, reforzamos estructuras y rehabilitamos piezas para minimizar paradas de planta.</span>
+                <span class="lang lang-en">Preventive and corrective maintenance for equipment, machinery and production lines. We repair cracks, reinforce structures and rehabilitate parts to minimize plant downtime.</span>
+              </p></div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="lang lang-es">Corte y preparación de materiales</span>
+                <span class="lang lang-en">Cutting &amp; Material Preparation</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-body"><p>
+                <span class="lang lang-es">Realizamos cortes con soplete, amoladora y sierra metálica, preparando materiales con las dimensiones y tolerancias requeridas para cada proyecto de soldadura y fabricación.</span>
+                <span class="lang lang-en">We perform cuts with torch, angle grinder and metal saw, preparing materials to the dimensions and tolerances required for each welding and fabrication project.</span>
+              </p></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section section-alt">
+      <div class="container">
+
+        <p class="section-label">
+          <span class="label-dot"></span>
+          <span class="lang lang-es">NUESTROS PROYECTOS</span>
+          <span class="lang lang-en">OUR PROJECTS</span>
+        </p>
+
+        <h2 class="projects-heading">
+          <span class="lang lang-es">Construimos proyectos que perduran</span>
+          <span class="lang lang-en">We build projects that last</span>
+        </h2>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card" data-index="0">
+            <div class="project-thumb" style="background-image: url('img/proj1.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Estructuras para edificios</span>
+                  <span class="lang lang-en">Building Structures</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="1">
+            <div class="project-thumb" style="background-image: url('img/proj2.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Plantas industriales</span>
+                  <span class="lang lang-en">Industrial Plants</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="2">
+            <div class="project-thumb" style="background-image: url('img/proj3.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Trabajos en campo</span>
+                  <span class="lang lang-en">Field Work</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="3">
+            <div class="project-thumb" style="background-image: url('img/proj4.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Fabricación a medida</span>
+                  <span class="lang lang-en">Custom Fabrication</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="4">
+            <div class="project-thumb" style="background-image: url('img/proj5.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Mantenimiento industrial</span>
+                  <span class="lang lang-en">Industrial Maintenance</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="5">
+            <div class="project-thumb" style="background-image: url('img/proj6.jpg')">
+              <div class="project-overlay">
+                <span class="project-name">
+                  <span class="lang lang-es">Montajes estructurales</span>
+                  <span class="lang lang-en">Structural Assemblies</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project detail" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="lightbox-inner">
+        <div class="lightbox-img-wrap">
+          <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+        </div>
+        <div class="lightbox-info">
+          <p class="lightbox-counter" id="lightboxCounter"></p>
+          <h3 class="lightbox-title"  id="lightboxTitle"></h3>
+          <p class="lightbox-desc"    id="lightboxDesc"></p>
+          <div class="lightbox-tags"  id="lightboxTags"></div>
+        </div>
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros" class="section about-section">
+      <div class="container">
+        <div class="about-layout">
+
+          <!-- Imagen izquierda -->
+          <div class="about-image-wrap">
+            <img src="img/aboutus.jpg" alt="True B Welding – structural welding on site" class="about-img" />
+            <div class="about-badge">
+              <span class="about-badge-number">10+</span>
+              <span class="about-badge-label">
+                <span class="lang lang-es">Años de experiencia</span>
+                <span class="lang lang-en">Years of experience</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Contenido derecha -->
+          <div class="about-content">
+
+            <p class="section-label">
+              <span class="label-dot"></span>
+              <span class="lang lang-es">SOBRE NOSOTROS</span>
+              <span class="lang lang-en">ABOUT US</span>
+            </p>
+
+            <h2 class="about-heading">
+              <span class="lang lang-es">Soldadura con propósito, precisión y compromiso</span>
+              <span class="lang lang-en">Welding with purpose, precision and commitment</span>
+            </h2>
+
+            <p class="about-text">
+              <span class="lang lang-es">True B Welding nace con el objetivo de ofrecer servicios de soldadura confiables, seguros y eficientes para el sector construcción e industrial. Ejecutamos cada trabajo con los más altos estándares de calidad, desde pequeñas reparaciones hasta grandes montajes estructurales.</span>
+              <span class="lang lang-en">True B Welding was founded to deliver reliable, safe and efficient welding services for the construction and industrial sectors. We execute every job to the highest quality standards, from minor repairs to large-scale structural assemblies.</span>
+            </p>
+
+            <ul class="list-check about-list">
+              <li>
+                <span class="lang lang-es">Soldadores certificados con amplia experiencia en obra.</span>
+                <span class="lang lang-en">Certified welders with extensive on-site experience.</span>
+              </li>
+              <li>
+                <span class="lang lang-es">Compromiso con la seguridad y la calidad del cordón de soldadura.</span>
+                <span class="lang lang-en">Committed to safety and weld bead quality on every job.</span>
+              </li>
+              <li>
+                <span class="lang lang-es">Asesoría técnica para seleccionar el mejor proceso de soldadura.</span>
+                <span class="lang lang-en">Technical advice to select the best welding process for each project.</span>
+              </li>
+              <li>
+                <span class="lang lang-es">Equipos móviles para atender proyectos en cualquier ubicación.</span>
+                <span class="lang lang-en">Mobile teams ready to serve projects at any location.</span>
+              </li>
+            </ul>
+
+            <!-- Misión y Visión -->
+            <div class="mv-grid">
+
+              <div class="mv-card">
+                <div class="mv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="9"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <line x1="12" y1="2"  x2="12" y2="5"/>
+                    <line x1="12" y1="19" x2="12" y2="22"/>
+                    <line x1="2"  y1="12" x2="5"  y2="12"/>
+                    <line x1="19" y1="12" x2="22" y2="12"/>
+                  </svg>
+                </div>
+                <h3 class="mv-title">
+                  <span class="lang lang-es">Misión</span>
+                  <span class="lang lang-en">Mission</span>
+                </h3>
+                <p class="mv-text">
+                  <span class="lang lang-es">Proveer servicios de soldadura que cumplan con los estándares internacionales certificados — AWS, ASME e ISO — optimizando cada proceso para garantizar uniones de alta resistencia, seguridad estructural y entrega puntual en cada proyecto que emprendemos.</span>
+                  <span class="lang lang-en">To provide welding services that comply with certified international standards — AWS, ASME and ISO — optimizing every process to guarantee high-strength joints, structural safety and on-time delivery on every project we undertake.</span>
+                </p>
+              </div>
+
+              <div class="mv-card">
+                <div class="mv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <h3 class="mv-title">
+                  <span class="lang lang-es">Visión</span>
+                  <span class="lang lang-en">Vision</span>
+                </h3>
+                <p class="mv-text">
+                  <span class="lang lang-es">Ser la empresa de soldadura de referencia en la región, reconocida por aplicar tecnología de vanguardia, procesos certificados y un equipo humano comprometido que eleva continuamente el estándar de calidad en la industria de la construcción y el sector industrial.</span>
+                  <span class="lang lang-en">To be the benchmark welding company in the region, recognized for applying cutting-edge technology, certified processes and a committed team that continuously raises the quality standard in the construction and industrial sectors.</span>
+                </p>
+              </div>
+
+            </div>
+
+            <a href="#contacto" class="btn btn-primary about-cta">
+              <span class="lang lang-es">Trabajemos juntos</span>
+              <span class="lang lang-en">Let's work together</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>
+            <span class="lang lang-es">Contacto</span>
+            <span class="lang lang-en">Contact</span>
+          </h2>
+          <p class="section-intro">
+            <span class="lang lang-es">Cuéntanos sobre tu proyecto y te enviaremos una propuesta a medida.</span>
+            <span class="lang lang-en">Tell us about your project and we will send you a tailored proposal.</span>
+          </p>
+          <ul class="contact-data">
+            <li><strong><span class="lang lang-es">Phone</span><span class="lang lang-en">Phone</span>:</strong> +61 435 496 047</li>
+            <li><strong>Email:</strong> trueblueweldingservsolutions@gmail.com</li>
+            <li><strong><span class="lang lang-es">Location</span><span class="lang lang-en">Location</span>:</strong> Sydney, Australia</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-field">
+            <label for="fname"><span class="lang lang-es">Nombre</span><span class="lang lang-en">Name</span></label>
+            <input type="text" id="fname" required />
+          </div>
+          <div class="form-field">
+            <label for="femail"><span class="lang lang-es">Correo electrónico</span><span class="lang lang-en">Email address</span></label>
+            <input type="email" id="femail" required />
+          </div>
+          <div class="form-field">
+            <label for="fmessage"><span class="lang lang-es">Mensaje</span><span class="lang lang-en">Message</span></label>
+            <textarea id="fmessage" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <span class="lang lang-es">Enviar mensaje</span>
+            <span class="lang lang-en">Send message</span>
+          </button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> True B Welding. &nbsp;
+        <span class="lang lang-es">Todos los derechos reservados.</span>
+        <span class="lang lang-en">All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
